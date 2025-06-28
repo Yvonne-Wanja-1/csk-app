@@ -18,9 +18,12 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        leading: CircleAvatar(
-          backgroundImage: AssetImage('images/profile.jpg'),
-         radius: 20,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 22.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('images/profile.jpg'),
+           radius: 25,
+          ),
         ),
       ),
       //body
