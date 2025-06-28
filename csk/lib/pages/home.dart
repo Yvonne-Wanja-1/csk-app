@@ -7,10 +7,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //app bar
       appBar: AppBar(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         elevation: 0,
         centerTitle: true,
+        //title
         title: const Text('Hey Nicholas 👋',
           style: TextStyle(
             color: Colors.black,
@@ -18,10 +20,26 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        leading: CircleAvatar(
-          backgroundImage: AssetImage('images/profile.jpg'),
-         radius: 20,
+        //leading
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 22.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('images/profile.jpg'),
+           radius: 25,
+          ),
         ),
+        //actions
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 22.0),
+            child: IconButton(
+              icon: const Icon(Icons.notifications_active_outlined, color: Colors.black, size: 30),
+              onPressed: () {
+                // Handle notification button press
+              },
+            ),
+          ),
+        ],
       ),
       //body
       body: const Center(
