@@ -11,7 +11,17 @@ class HomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         elevation: 0,
         centerTitle: true,
-        title: const Text('Home'),
+        title: const Text('Hey Nicholas 👋',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/profile.jpg'),
+         radius: 20,
+        ),
       ),
       //body
       body: const Center(
