@@ -1,5 +1,6 @@
 import 'package:csk/widgets/bottomnavigationbar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -212,16 +213,36 @@ SizedBox(height: 10
 
 ),
 
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-  children: [
-    Column(
-      children: [
 
-        ],
+  Row(
+    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      Column(
+        children: [
+  Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 3.0),
+    child: Text('AI in Healthcare',
+    style:GoogleFonts.dancingScript(
+       color: Colors.black,
+    
+    
+    )),
+  ),
+  Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 3.0, vertical: 5),
+    child: Text(
+      '''Join us for a webinar on the latest advancements in AI for medical applications.''',
+      style: TextStyle(
+        color: Colors.grey[700],
+      ),
     ),
-  ],
-)
+  )
+          ],
+      ),
+      Image.asset(name)
+    ],
+  ),
+
               ],
           ),
         ),
