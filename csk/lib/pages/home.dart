@@ -201,7 +201,7 @@ class HomePage extends StatelessWidget {
 
 
 
-              const SizedBox(height: 25),
+              const SizedBox(height: 30),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 22.0),
                 child: Align(
@@ -209,6 +209,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'Upcoming Events',
                     style: TextStyle(
+                      decoration: TextDecoration.underline,
                       fontWeight: FontWeight.bold,
                       fontSize: 25,
                       color: Colors.black,
@@ -248,6 +249,23 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
+
+SizedBox(height: 12,),
+     Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 22.0),
+                    child: Text(
+                      'Quick Access',
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
               ],
           ),
         ),
