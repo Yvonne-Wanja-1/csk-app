@@ -331,10 +331,49 @@ SizedBox(height: 12),
                     const SizedBox(width: 16),
                     ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
-                        child: Image.asset('images/healthcare.jpg', width: 100, height: 100, fit: BoxFit.cover,)),
+                        child: Image.asset('images/ailearning.jpg', width: 100, height: 100, fit: BoxFit.cover,)),
                   ],
                 ),
               ),
+
+
+
+ const SizedBox(height: 15),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 22.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('CSK community Updates',
+                              style: GoogleFonts.dancingScript(
+                                  color: Colors.black,
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Check out the latest news and updates from the CSK community.',
+                            style: TextStyle(
+                              color: Colors.grey[700],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(12.0),
+                        child: Image.asset('images/updates.jpg', width: 100, height: 100, fit: BoxFit.cover,)),
+                  ],
+                ),
+              ),
+
+
+
+
+
               ],
           ),
         ),
