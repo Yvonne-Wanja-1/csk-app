@@ -160,7 +160,7 @@ class HomePage extends StatelessWidget {
                   onTap: () {},
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
-                    child: Image.asset('images/AI.jpeg', fit: BoxFit.cover),
+                    child: Image.asset('images/members.jpg', fit: BoxFit.cover),
                   ),
                 ),
               ),
@@ -168,7 +168,7 @@ class HomePage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: const EdgeInsets.only(left: 8.0, top: 8.0),
-                  child: Text('Challenge',
+                  child: Text('Member Project',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -177,7 +177,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text('''Build a simple image classifier with TensorFlow.''',
+              Text('''Explore how Alex built a chatbot for customer support.''',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.grey[700],
@@ -197,6 +197,31 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+
+
+
+              SizedBox(height: 25),
+Text('Upcoming Events',
+style: TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 25,
+  color: Colors.black,
+),
+),
+SizedBox(height: 10
+
+),
+
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: [
+    Column(
+      children: [
+
+        ],
+    ),
+  ],
+)
               ],
           ),
         ),
