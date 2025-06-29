@@ -201,47 +201,52 @@ class HomePage extends StatelessWidget {
 
 
 
-              SizedBox(height: 25),
-Text('Upcoming Events',
-style: TextStyle(
-  fontWeight: FontWeight.bold,
-  fontSize: 25,
-  color: Colors.black,
-),
-),
-SizedBox(height: 10
-
-),
-
-
-  Row(
-    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: [
-      Column(
-        children: [
-  Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 3.0),
-    child: Text('AI in Healthcare',
-    style:GoogleFonts.dancingScript(
-       color: Colors.black,
-    
-    
-    )),
-  ),
-  Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 3.0, vertical: 5),
-    child: Text(
-      '''Join us for a webinar on the latest advancements in AI for medical applications.''',
-      style: TextStyle(
-        color: Colors.grey[700],
-      ),
-    ),
-  )
-          ],
-      ),
-      Image.asset(name)
-    ],
-  ),
+              const SizedBox(height: 25),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 22.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Upcoming Events',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 15),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 22.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('AI in Healthcare',
+                              style: GoogleFonts.dancingScript(
+                                  color: Colors.black,
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Join us for a webinar on the latest advancements in AI for medical applications.',
+                            style: TextStyle(
+                              color: Colors.grey[700],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(12.0),
+                        child: Image.asset('images/healthcare.jpg', width: 100, height: 100, fit: BoxFit.cover,)),
+                  ],
+                ),
+              ),
 
               ],
           ),
