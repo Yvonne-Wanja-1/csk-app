@@ -1,4 +1,5 @@
 import 'package:csk/widgets/bottomnavigationbar.dart';
+import 'package:csk/widgets/elevatedbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -266,6 +267,74 @@ SizedBox(height: 12,),
                     ),
                   ),
                 ),
+SizedBox(height: 12),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      MyElevatedbutton(data: 'Resources', onPressed: (){}),
+                      SizedBox(width: 12,),
+                      MyElevatedbutton(data: 'Challenges', onPressed: (){}),
+                       SizedBox(width: 12,),
+                      MyElevatedbutton(data: 'Projects', onPressed: (){}),
+                       SizedBox(width: 12,),
+                      MyElevatedbutton(data: 'Discussions', onPressed: (){}),
+                    ],
+                  ),
+                ),
+
+                SizedBox(height: 12,),
+     Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 22.0),
+                    child: Text(
+                      'Announcements',
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+
+
+
+
+                 const SizedBox(height: 15),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 22.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('New AI & Machine Learning Course',
+                              style: GoogleFonts.dancingScript(
+                                  color: Colors.black,
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Learning the basics of machine learning with our new introductory course.',
+                            style: TextStyle(
+                              color: Colors.grey[700],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(12.0),
+                        child: Image.asset('images/healthcare.jpg', width: 100, height: 100, fit: BoxFit.cover,)),
+                  ],
+                ),
+              ),
               ],
           ),
         ),
